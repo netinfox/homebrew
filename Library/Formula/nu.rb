@@ -4,8 +4,9 @@ class Nu < Formula
   url 'http://programming.nu/releases/Nu-0.4.0.tgz'
   homepage 'http://programming.nu'
   md5 '94d181e94cd661569103290183e89477'
+  head 'https://github.com/timburks/nu.git', :branch => 'amalgamated'
 
-  depends_on 'pcre'
+#  depends_on 'pcre'
 
   def install
     ENV['PREFIX'] = prefix

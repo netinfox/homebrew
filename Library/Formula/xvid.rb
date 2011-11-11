@@ -1,7 +1,8 @@
 require 'formula'
 
 class Xvid < Formula
-  url 'http://downloads.xvid.org/downloads/xvidcore-1.3.2.tar.gz'
+#  url 'http://downloads.xvid.org/downloads/xvidcore-1.3.2.tar.gz'
+  url 'http://fossies.org/unix/privat/xvidcore-1.3.2.tar.gz'
   homepage 'http://www.xvid.org'
   md5 '87c8cf7b69ebed93c2d82ea5709d098a'
 

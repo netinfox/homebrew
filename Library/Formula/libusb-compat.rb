@@ -8,7 +8,12 @@ class LibusbCompat < Formula
   depends_on 'pkg-config' => :build
   depends_on 'libusb'
 
+  def options
+    [["--universal", "Build a universal binary."]]
+  end
+
   def install
+    ENV.universal_binary if ARGV.build_universal?
     system "./configure", "--prefix=#{prefix}", "--disable-dependency-tracking"
     system "make install"
   end
