@@ -9,6 +9,7 @@ class Libftdi < Formula
   depends_on 'libusb-compat'
 
   def install
+    ENV.m32
     mkdir 'libftdi-build'
     Dir.chdir 'libftdi-build' do
       system "../configure", "--prefix=#{prefix}"
